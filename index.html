@@ -12,8 +12,17 @@
 <body>
     <main> 
         <h1>Iffy</h1>
-        <img src ="https://picsum.photos/id/343/200/300" alt="image displayed because not github pages"></img>
+        <script>
+            console.log('window.location.host', window.location.host)
+            console.log('window.location.includes(github.io)', window.location.host.includes('github.io'))
 
+            if (window.location.host.includes('github.io')) {
+                <img src ="https://picsum.photos/id/343/200/300" alt="image displayed because ON github pages"></img>
+            } else {
+                <img src ="https://picsum.photos/id/200/200/300" alt="image displayed because not github pages"></img>
+            }
+
+        </script>
     </main>
 </body>
 </html>
